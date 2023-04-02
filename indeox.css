@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Priori" !important;
+    font-family: 'PT Serif', serif;
+}
+
+
+/*navbar*/
+
+nav {
+    background-color: black;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: white;
+    text-decoration-line: underline overline;
+}
+
+.top-bar {
+    display: flex;
+    margin-left: 20%;
+    letter-spacing: 10px;
+}
+
+ion-icon {
+    font-size: 18px;
+}
+
+.top-bar li {
+    list-style: none;
+    display: flex;
+    margin: 0px 5px;
+}
+
+.top-bar a,
+nav a {
+    color: rgb(250, 128, 224);
+}
+
+.top-bar a:hover,
+nav a:hover {
+    color: rgb(253, 233, 249);
+}
+
+nav {
+    background: #000;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    letter-spacing: 5px;
+}
+
+.menu li {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #f4a7ba;
+    font-weight: 700;
+    line-height: 80%;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and(max-width:600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+}
+
+.logo img {
+    width: 170px;
+    margin-right: -60px;
+    margin-left: 20px;
+}
+
+
+/*homepage*/
+
+.parallax {
+    background-image: url('https://wallpapers.com/images/featured/3dcpt7p1kgu54lty.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: rgba(238, 0, 167, 0.966);
+    position: fixed;
+    font-weight: bolder;
+    right: 68vh;
+    bottom: 30vh;
+}
+
+.word {
+    font-size: 25px;
+    color: white;
+    position: fixed;
+    left: 93vh;
+    bottom: 20vh;
+}
+
+.text-container {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    font-size: 56px;
+    color: white;
+}

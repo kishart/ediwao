@@ -109,6 +109,10 @@ nav {
 
 /*homepage*/
 
+section {
+    min-height: 100vh;
+}
+
 .parallax {
     background-image: url('https://wallpapers.com/images/featured/3dcpt7p1kgu54lty.jpg');
     background-repeat: no-repeat;
@@ -149,4 +153,10 @@ nav {
     position: fixed;
     font-size: 56px;
     color: white;
+}
+
+.container {
+    height: 100vh;
+    background-color: #f1f1f1;
+    position: relative;
 }

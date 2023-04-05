@@ -15,6 +15,19 @@ body {
 
 nav {
     background-color: black;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.top-bar {
+    background-color: black;
+    display: flex;
+    margin-left: 20%;
+    letter-spacing: 10px;
+    padding: 8px;
 }
 
 a,
@@ -22,12 +35,6 @@ a:hover {
     text-decoration: none;
     color: white;
     text-decoration-line: underline overline;
-}
-
-.top-bar {
-    display: flex;
-    margin-left: 20%;
-    letter-spacing: 10px;
 }
 
 ion-icon {
@@ -50,13 +57,6 @@ nav a:hover {
     color: rgb(253, 233, 249);
 }
 
-nav {
-    background: #000;
-    padding: 5px 20px;
-    display: flex;
-    align-items: center;
-}
-
 .logo a {
     display: flex;
     align-items: center;
@@ -72,15 +72,14 @@ nav {
     align-items: center;
     list-style: none;
     letter-spacing: 5px;
+    background-color: black;
 }
 
 .menu li {
-    padding: 15px;
+    padding: 12px;
     font-size: 15px;
     font-weight: 700;
     color: #f4a7ba;
-    font-weight: 700;
-    line-height: 80%;
 }
 
 .toggle {
@@ -97,6 +96,8 @@ nav {
     .menu {
         margin-top: 15px;
         display: none;
+        position: fixed;
+        background-color: black;
     }
 }
 
@@ -133,30 +134,71 @@ section {
     font-size: 40px;
     letter-spacing: 5px;
     color: rgba(238, 0, 167, 0.966);
-    position: fixed;
     font-weight: bolder;
-    right: 68vh;
-    bottom: 30vh;
-}
-
-.word {
-    font-size: 25px;
-    color: white;
-    position: fixed;
-    left: 93vh;
-    bottom: 20vh;
+    position: static;
+    margin-top: 105%;
+    margin-bottom: 32%;
 }
 
 .text-container {
     display: grid;
     place-items: center;
-    position: fixed;
     font-size: 56px;
     color: white;
 }
 
+
+/*shop*/
+
+#shop {
+    background-color: #f0e9eb;
+}
+
 .container {
-    height: 100vh;
-    background-color: #f1f1f1;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    padding: 15px;
+}
+
+.box {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.jennie {
+    background-image: url('https://i.pinimg.com/564x/75/06/57/7506573825bd3105aa72de973f0241a5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 1;
+    margin-top: 40vh;
+}
+
+.lisa {
+    background-image: url('https://i.pinimg.com/564x/74/f0/74/74f074bb77e6205834c4042a77bf03f7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
+    margin-top: 80vh;
+}
+
+.jisoo {
+    background-image: url('https://i.pinimg.com/564x/5b/53/25/5b5325c981e691e9608ee64253e2a859.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 3;
+    margin-top: 40vh;
+}
+
+.rose {
+    background-image: url('https://i.pinimg.com/564x/dd/4a/be/dd4abe9f7b99a25154256191d3fa689f.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 4;
+    margin-top: 80vh;
 }

@@ -152,6 +152,7 @@ section {
 
 #shop {
     background-color: #f0e9eb;
+    height: 100vh;
 }
 
 .container {
@@ -162,13 +163,19 @@ section {
     padding: 15px;
 }
 
+.container .box {
+    background-color: #f0e9eb;
+}
+
 .box {
+    background-color: #e0cacf;
     flex: 1;
     height: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    margin: 5vh;
 }
 
 .jennie {

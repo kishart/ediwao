@@ -22,6 +22,10 @@ nav {
     align-items: center;
 }
 
+nav a:hover {
+    text-decoration-line: underline overline;
+}
+
 .top-bar {
     background-color: black;
     display: flex;
@@ -34,7 +38,6 @@ a,
 a:hover {
     text-decoration: none;
     color: white;
-    text-decoration-line: underline overline;
 }
 
 ion-icon {
@@ -151,61 +154,77 @@ section {
 /*shop*/
 
 #shop {
-    background-color: #f0e9eb;
+    background-color: #4e4a4a;
     height: 100vh;
+    padding-top: 10%;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
-    padding: 15px;
+    justify-content: space-evenly;
 }
 
-.container .box {
-    background-color: #f0e9eb;
+.box img {
+    height: 50vh;
+    width: 20vw;
 }
 
 .box {
+    background-color: #f4a7ba;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    ;
+}
+
+.jenini {
+    background-color: black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+/*
+
+
+
+.box .jennie {
     background-color: #e0cacf;
     flex: 1;
     height: 100%;
-    width: 80%;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 5vh;
 }
 
-.jennie {
-    background-image: url('https://i.pinimg.com/564x/75/06/57/7506573825bd3105aa72de973f0241a5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 1;
-    margin-top: 40vh;
+#jennie {
+    background-color: aqua;
+    width: 20vw;
+    height: 10vh;
 }
 
-.lisa {
-    background-image: url('https://i.pinimg.com/564x/74/f0/74/74f074bb77e6205834c4042a77bf03f7.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 2;
-    margin-top: 80vh;
+.jen {
+    width: 20vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.jisoo {
-    background-image: url('https://i.pinimg.com/564x/5b/53/25/5b5325c981e691e9608ee64253e2a859.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 3;
-    margin-top: 40vh;
+
+
+.lis {
+    width: 20vw;
+    height: 30vh;
 }
 
-.rose {
-    background-image: url('https://i.pinimg.com/564x/dd/4a/be/dd4abe9f7b99a25154256191d3fa689f.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 4;
-    margin-top: 80vh;
+.jis {
+    width: 20vw;
+    height: 30vh;
 }
+
+.ros {
+    width: 20vw;
+    height: 30vh;
+}
+*/

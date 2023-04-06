@@ -1,18 +1,7 @@
-let navbar = document.getElementById("main-nav");
-let viewportHeight = window.innerHeight;
-let navHeight = document.getElementById("main-nav").offsetHeight;
+function showMore() {
+    document.getElementById("jennie").innerHTML = "This is the expanded text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam, metus vel elementum tincidunt, velit velit scelerisque lorem, sit amet gravida dolor justo ac lectus.";
+}
 
-let navbarLinks = document.querySelectorAll("nav a");
-
-window.addEventListener("scroll", e => {
-    scrollpos = window.scrollY;
-    navbarLinks.forEach(link => {
-        let section = document.querySelector(link.hash);
-        if (section.offsetTop <= scrollpos + 150 &&
-            section.offsetTop + section.offsetHeight > scrollpos + 150) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
-});
+function showLess() {
+    document.getElementById("jennie").innerHTML = "This is the text to be shown";
+}

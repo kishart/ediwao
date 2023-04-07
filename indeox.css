@@ -151,80 +151,177 @@ section {
 }
 
 
-/*shop*/
+/*about*/
 
-#shop {
+#about {
     background-color: #4e4a4a;
-    height: 100vh;
-    padding-top: 10%;
-}
-
-.container {
+    height: 130vh;
+    padding-bottom: 18%;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.box img {
-    height: 50vh;
-    width: 20vw;
-}
-
-.box {
-    background-color: #f4a7ba;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    ;
-}
-
-.jenini {
-    background-color: black;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    color: white;
-    text-align: center;
-}
-
-
-/*
-
-
-
-.box .jennie {
-    background-color: #e0cacf;
-    flex: 1;
-    height: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 5vh;
 }
 
-#jennie {
-    background-color: aqua;
-    width: 20vw;
-    height: 10vh;
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.jen {
-    width: 20vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.card-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px;
 }
 
-
-
-.lis {
-    width: 20vw;
-    height: 30vh;
+.card {
+    background: #fff;
+    width: 280px;
+    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 55%;
 }
 
-.jis {
-    width: 20vw;
-    height: 30vh;
+.card2 {
+    background: #fff;
+    width: 280px;
+    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 65%;
 }
 
-.ros {
-    width: 20vw;
-    height: 30vh;
+.card .card-img {
+    width: 280px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
 }
-*/
+
+.card2 .card-img2 {
+    width: 280px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.card .card-img img {
+    width: 102%;
+    height: 102%;
+}
+
+.card2 .card-img2 img {
+    width: 102%;
+    height: 102%;
+}
+
+.card-content {
+    text-align: center;
+    margin: 15px;
+}
+
+.card-content2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.card-content .text {
+    position: relative;
+    font-size: .9em;
+    text-align: left;
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.card-content .text:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff, transparent);
+    display: none;
+}
+
+.card-content2 .text2 {
+    position: relative;
+    font-size: .9em;
+    text-align: left;
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.card-content2 .text2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #fff, transparent);
+    display: none;
+}
+
+.card.gradient .card-contentt .text:before {
+    display: block;
+}
+
+.card-content .see-more-btn {
+    font-size: .85em;
+    background-color: #000000;
+    color: #ffffff;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+}
+
+.card-content2 .see-more-btn2 {
+    font-size: .85em;
+    background-color: #000000;
+    color: #ffffff;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+}
+
+.card-content .see-more-btn:hover {
+    color: #fa1ac9;
+}
+
+.card-content2 .see-more-btn2:hover {
+    color: #fa1ac9;
+}
+
+@media screen and (max-width:450px) {
+    .card-container .card-container2 {
+        margin: 15px;
+    }
+    .card .card2 {
+        width: 100%;
+    }
+    .card .card-img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+    .card-img2 .card-img2 {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+}
